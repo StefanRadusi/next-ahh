@@ -1,7 +1,12 @@
+import react from 'react';
+import Layout from '../components/Layout';
+
 const Index = () => (
-  <div>
-    <p>Hello Next.js</p>
-  </div>
+    <div className='home basicPageStyle'>
+        <p>Hello Next.js</p>
+    </div>
 )
 
-export default Index
+
+
+export default () => (<Layout><Index/></Layout>);
