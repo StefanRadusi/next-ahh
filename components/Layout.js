@@ -1,35 +1,39 @@
 import Header from './Header';
+import Head from 'next/head';
+import css from '../css/utils';
 
 const Layout = (props) => (
   <div className='layout'>
-    <div className='container'>
+      <Head>
+        <title>Hai Hui</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"/>
+      </Head>
+
       <Header />
       {props.children}
-    </div>
-    <style jsx global>{ `
-      p {
-        margin: 0;
-      }
 
-      div.layout {
-          outline: 1px solid lightgrey;
-          display: flex;
-          justify-content: center;
-      }
+    <style jsx global>
+{`
+div.layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    font-family: News Cycle, Arial;
+    font-weight: 300;
+    background: ${css.neutral}
+}
 
-      div.container {
-        position: relative;
-        outline: 1px solid lightgrey;
-        width: 100%;
-        max-width: 1000px;
-
-      }
-
-      div.basicPageStyle {
-        outline: 1px solid lightgrey;
-        height: 1000px;
-      }
-    `}</style>
+div.basicPage {
+    margin-top: 50px;
+    padding: 10px;
+}
+`}
+    </style>
   </div>
 )
 
