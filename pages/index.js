@@ -13,8 +13,14 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 Donec risus elit, malesuada at nisl non, convallis mollis tortor. Integer posuere eros eros, sit amet imperdiet enim congue eu. Nam dignissim velit purus, non dignissim tellus fermentum eu. Praesent euismod gravida nibh, a gravida leo pellentesque id. Vestibulum blandit tincidunt nulla, quis tincidunt sem imperdiet quis. Aenean quis diam imperdiet, varius est vitae, ornare lorem. Phasellus egestas id nibh ac mollis. Nam hendrerit id erat a consectetur.
 
 Curabitur et ultrices lectus. Nunc tincidunt erat a ornare efficitur. Nullam id tempor est, quis finibus quam. Donec commodo consequat felis, et elementum lacus tempor id. Maecenas suscipit mauris vel luctus ullamcorper. Integer aliquam est quis varius lobortis. Aenean venenatis dolor ligula, condimentum tempus justo eleifend vitae. Sed ante mi, sagittis ac lorem in, cursus molestie enim. Quisque at quam facilisis, venenatis lectus eu, fermentum eros. Aliquam quis orci pretium, convallis libero at, luctus sapien. Etiam consequat congue efficitur. Nulla gravida pretium tellus, ac semper mi posuere non.
-</p>
-  </div>
-)
+    </p>
+    
 
-export default () => (<Layout><Home/></Layout>);
+  </div>
+) 
+
+export default () => (
+  <Layout homePage>  
+    <Home/>
+  </Layout>
+);

@@ -40,15 +40,14 @@ var Home = function Home() {
 };
 
 exports.default = function () {
-  return _react2.default.createElement(_Layout2.default, {
-    __source: {
+  return _react2.default.createElement(_Layout2.default, { homePage: true, __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     }
   }, _react2.default.createElement(Home, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 24
     }
   }));
 };

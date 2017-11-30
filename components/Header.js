@@ -41,9 +41,8 @@ class Header extends Component {
     }
 
     render() {
-
         return (
-            <div className='header'>
+            <div className={this.props.homePage ? 'header hasBanner' : 'header'}>
                 <div className='line'></div>
                 <div className='container'>
                     <div className='menuIcon' onMouseEnter={this.showPages.bind(this)} onClick={this.state.showPages ? this.hidePages.bind(this) : this.showPages.bind(this)}>
@@ -86,12 +85,22 @@ class Header extends Component {
                 <style jsx>
 {
 `div.header {
-    position:fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: calc(100% - 20px);
     height: 40px;
     padding: 10px;
+}
+
+div.header.hasBanner {
+    top: 300px;
+}
+
+@media (max-width: 600px) {
+    div.header.hasBanner {
+        top: 200px;
+    }
 }
 
 div.line {
@@ -102,7 +111,7 @@ div.line {
     width:100%;
     height:40%;
     background:${css.sky};
-    z-Index:-1;
+    // z-Index:-1;
     
 }
 
@@ -263,6 +272,7 @@ a p {
     font-size: 15px;
     margin : 0;
     margin-left: 5px;
+    cursor: default;
 }
 
 a div {
@@ -284,39 +294,40 @@ svg.expande path {
     stroke-width: 9;
     fill:none;
     stroke-linejoin : round;
+    stroke-linecap : round;
     transition: all .2s ease;
 
-    d : path("M10,10 L70,50 L10,90 L10,10 L70,50"); 
+    d : path("M10,10 L70,50 L10,90 L10,10"); 
 }
 
 @keyframes expande {
     0% {
-        d : path("M10,10 L70,50 L10,90 L10,10 L70,50"); 
+        d : path("M10,10 L70,50 L10,90 L10,10"); 
     }
 
     50% {
-        d : path("M10,10 L80,10 L10,10 L10,10 L10,10");
+        d : path("M10,10 L80,10 L10,10 L10,10");
     }
 
     100% {
         fill: ${css.grey};
-        d : path("M10,20 L90,20 L50,80 L10,20 L90,20");
+        d : path("M10,20 L90,20 L50,80 L10,20");
     }
 }
 
 @keyframes dexpande {
     0% {
         fill: ${css.grey};
-        d : path("M10,20 L90,20 L50,80 L10,20 L90,20");
+        d : path("M10,20 L90,20 L50,80 L10,20");
     }
     
     50% {
-        d : path("M10,10 L80,10 L10,10 L10,10 L10,10");
+        d : path("M10,10 L10,80 L10,10 L10,10");
     }
     
     100% {
         fill: none;
-        d : path("M10,10 L70,50 L10,90 L10,10 L70,50"); 
+        d : path("M10,10 L70,50 L10,90 L10,10"); 
     }
 }
 
