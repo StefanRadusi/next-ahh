@@ -6,26 +6,46 @@ import HaiHuiLogo from './svg/HaiHuiLogo.js';
 
 const HomeBanner = () => (
     <div className='homeBanner'>
+        <div className='svgBackGroundRadient'></div>
         <div className='svgContainer'>
             <HaiHuiLogo />
         </div>
         <style jsx>{
 `
 div.homeBanner {
+    position:relative;
     height: 300px;
     width: 100%;
     background-image: url("./static/homeBanner.png");
     background-size: 1400px 300px;    
 }
 
-div.svgContainer {
+div.svgContainer {    
     width:500px;
     height: 300px;
     margin: auto;
-    // background: ${css.neutral};
-    background: radial-gradient(ellipse at center, rgba(239,239,239,1) 40%, rgba(239,239,239,0) 80%);
-    border-radius: 300px;
-    // box-shadow: 0px 0px 15px 15px rgba(239,239,239,1);
+    // border-radius: 300px;
+}
+
+@keyframes scaleGradientDiv {
+    0% {
+        transform:  translateX(-50%) translateY(-50%) scale(0);
+    }
+
+    100% {
+        transform:  translateX(-50%) translateY(-50%) scale(1);
+    }
+}
+
+div.svgBackGroundRadient {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:  translateX(-50%) translateY(-50%) scale(0);
+    width:300px;
+    height: 300px;
+    background: radial-gradient(ellipse at center, rgba(239,239,239,1) 20%, rgba(239,239,239,0) 80%);
+    animation: scaleGradientDiv 2s 2s ease forwards;
 }
 
 @media (max-width: 600px) {

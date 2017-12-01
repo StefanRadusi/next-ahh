@@ -1,7 +1,12 @@
+import css from '../../css/utils';
+
 export default () => (
     <svg width="500px" height="500px" viewBox="0 0 500 500">
         <g>
-            <path fill="#054D4D" stroke="#054D4D" stroke-miterlimit="10" d="M133.179,308.18c-1.828-1.626-4.013-3.338-6.368-2.438
+            <path 
+                id="atelierul"
+                // fill="#054D4D" 
+                stroke="#054D4D" stroke-miterlimit="10" d="M133.179,308.18c-1.828-1.626-4.013-3.338-6.368-2.438
                 c-2.22,0.846-3.832,3.872-1.896,6.03C129.247,316.605,137.92,312.4,133.179,308.18L133.179,308.18z M189.516,370.901l-3.269,0.964
                 c-3.14-2.451-1.444-6.384-0.922-9.901c-3.575,1.362-8.273,5.117-13.369,3.761c-5.479-1.458-3.985-8.824-2.56-14.06l0.487-1.999
                 l-0.171,0.245c-4.445,2.319-9.472,5.085-18.328,6.325c-4.424,0.619-14.731,2.279-14.019-4.899c0.029-0.289,0.073-0.575,0.131-0.854
@@ -66,7 +71,10 @@ export default () => (
                 C121.301,284.833,102.08,286.79,94.221,289.791L94.221,289.791z M65.731,269.622c2.846,2.299,9.993,5.715,13.843,5.868
                 c1.55,0.06,4.84-0.922,5.33-2.766C86.516,266.646,70.137,267.891,65.731,269.622L65.731,269.622z M81.68,212.237l0.505-0.307
                 l4.486-3.324c-3.07-2.068-12.511-5.087-16.481-2.283C65.782,209.437,73.258,217.37,81.68,212.237z"/>
-            <path fill="#FF3B3F" stroke="#FF3B3F" stroke-miterlimit="10" d="M358.248,160.949l-3.028-2.932
+            <path 
+                id="haihui" 
+                // fill="#FF3B3F" 
+                stroke="#FF3B3F" stroke-miterlimit="10" d="M358.248,160.949l-3.028-2.932
                 c-3.146-3.771-7.808-5.886-13.817-3.991c-4.592,1.792-8.365,5.324-11.247,9.737c-7.776,7.387-15.352,14.13-22.976,20.268
                 c2.742-23.279,6.373-46.252,11.178-68.818c2.848-9.958-10.041-12.418-12.93-4.812c-6.572,24.52-11.426,52.825-14.271,85.543
                 c-12.002,8.165-24.544,14.968-38.539,20.552c1.94-14.67,5.757-30.545,12.478-47.548c11.207-31.083,23.914-61.23,39.092-89.837
@@ -109,8 +117,83 @@ export default () => (
         <style jsx>{
 `
 svg {
-    width: 100%;
-    height: 100%;
+    ${css.center};
+    width: 130%;
+    height: 130%;
+}
+
+@keyframes animateHaiHui {
+    0% {
+        transform: scale(0);
+    }
+    
+    50% {
+        transform: scale(1.1)
+    }
+    
+    70% {
+        transform: scale(.9);
+        opacity: 1;
+    }
+    
+    90% {
+        transform: scale(1.05)
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(1)
+        opacity: 1;
+    }
+}
+
+@keyframes drew {
+    0% {
+        stroke-dashoffset: 2700;
+    }
+    
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillAtelierul {
+    0% {
+        fill: transparent;
+    }
+    
+    100% {
+        fill: #054D4D;
+    }
+}
+
+@keyframes fillHaihui {
+    0% {
+        fill: transparent;
+    }
+    
+    100% {
+        fill: #FF3B3F;
+    }
+}
+
+
+
+path {
+    stroke-width: 3;
+    fill:transparent;
+    opacity: 0;
+    transform-origin: center;
+    stroke-dasharray: 2700;
+}
+
+#atelierul {
+    animation: animateHaiHui 2s 1s ease forwards , drew 2s 1s forwards, fillAtelierul 3s 2s forwards;
+    
+}
+
+#haihui {
+    animation: animateHaiHui 2s 1.5s ease forwards , drew 2s 1.5s forwards, fillHaihui 3s 2.5s forwards;
 }
 `            
         }</style>
