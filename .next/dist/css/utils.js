@@ -8,5 +8,6 @@ exports.default = {
     neutral: '#EFEFEF',
     sky: '#CAEBF2;',
     grey: '#054D4D',
-    center: '\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translateX(-50%) translateY(-50%);\n    '
+    center: '\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translateX(-50%) translateY(-50%);\n    ',
+    basicBannerSvg: '\n        \n            height: 300px;\n        \n    '
 };

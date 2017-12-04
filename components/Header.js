@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import {Component} from 'react';
 import css from '../css/utils';
-import { setTimeout } from 'timers';
+// import { setTimeout } from 'timers';
 
 class Header extends Component {
     constructor() {
@@ -94,7 +94,7 @@ class Header extends Component {
 }
 
 div.header.hasBanner {
-    top: 300px;
+    top: 289px;
 }
 
 @media (max-width: 600px) {
@@ -111,8 +111,6 @@ div.line {
     width:100%;
     height:40%;
     background:${css.sky};
-    // z-Index:-1;
-    
 }
 
 div.container {
@@ -176,17 +174,9 @@ div.pages {
    display: none;
 }
 
-// div.pages div.page {
-//     opacity: 0;
-// }
-
 div.pages.show {
     display: block;
 }
-
-// div.pages.show div.page {
-//     opacity: 0;
-// }
 
 ul {
     list-style-type: none;
@@ -197,7 +187,6 @@ ul {
 }
 
 li {
-    // background: ${css.sky};
     opacity: 0.9;
     margin-bottom: 4px;
     transform: scale(1);
@@ -205,7 +194,6 @@ li {
     border-radius: 25px;
     
     transition: all .2s ease;
-    
 }
 
 li: hover {
@@ -215,12 +203,17 @@ li: hover {
 }
 
 
+@media (max-width: 600px) {
+    li {
+        opacity: 1;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    }
+}
+
 div.page {
     background: ${css.sky};
     border-radius: 25px;
     opacity: 0;
-    
-    //transform: translateY(15px);
 }
 
 @keyframes show {
@@ -279,7 +272,6 @@ a div {
     height: 35px;
     width: 35px;
     position: relative;
-    // margin-left: 8px;
     border-radius: 25px;
 
     background-color: ${css.grey};
@@ -332,14 +324,10 @@ svg.expande path {
 }
 
 svg.expande.show path {
-    //d : path("M10,20 L90,20 L50,80 L10,20 L90,20");
-
     animation: expande .5s ease forwards;
 }
 
 svg.expande.hide path {
-    //d : path("M10,20 L90,20 L50,80 L10,20 L90,20");
-
     animation: dexpande .5s ease forwards;
 }
 `

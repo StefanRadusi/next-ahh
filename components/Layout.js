@@ -14,17 +14,16 @@ const HomeBanner = () => (
 `
 div.homeBanner {
     position:relative;
-    height: 300px;
+    height: 289px;
     width: 100%;
     background-image: url("./static/homeBanner.png");
-    background-size: 1400px 300px;    
+    // background-size: 1350px 275px;    
 }
 
 div.svgContainer {    
     width:500px;
     height: 300px;
     margin: auto;
-    // border-radius: 300px;
 }
 
 @keyframes scaleGradientDiv {
@@ -70,10 +69,10 @@ const Layout = (props) => (
         props.homePage && <HomeBanner />
     }
     <Head>
-    <title>Hai Hui</title>
-    <meta charSet='utf-8' />
-    <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"/>
+        <title>Hai Hui</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"/>
     </Head>
     <Header homePage = {props.homePage}/>
     {props.children}
@@ -103,7 +102,7 @@ div.layout {
     top: 0;
     left: 0;
     width: 100%;
-    // height: 100%;
+    min-height: 100%;
     font-size: 10px;
     font-family: News Cycle, Arial;
     font-weight: 300;
@@ -111,8 +110,11 @@ div.layout {
 }
 
 div.basicPage {
+    margin: auto;
     margin-top: 50px;
     padding: 10px;
+    width: calc(100% - 20px);
+    max-width: 980px;
 }
 `}
     </style>
