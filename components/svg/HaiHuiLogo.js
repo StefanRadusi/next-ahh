@@ -120,6 +120,7 @@ svg {
     ${css.center};
     width: 100%;
     height: 130%;
+    
 }
 
 @keyframes animateHaiHui {
