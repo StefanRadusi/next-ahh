@@ -91,6 +91,7 @@ class Header extends Component {
     width: calc(100% - 20px);
     height: 40px;
     padding: 10px;
+    z-index: 1;
 }
 
 div.header.hasBanner {

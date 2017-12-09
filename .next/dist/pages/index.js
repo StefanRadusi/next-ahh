@@ -26,7 +26,7 @@ var _svgAgregator2 = _interopRequireDefault(_svgAgregator);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'D:\\programming\\nodejs\\heroku\\next-ahh\\pages\\index.js?entry';
+var _jsxFileName = 'F:\\nodejs\\next-ahh\\pages\\index.js?entry';
 
 
 var Home = function Home() {

@@ -13,5 +13,7 @@ export default {
         
             height: 300px;
         
-    `
+    `,
+    boxShadow : 'box-shadow: 1px 1px 1px rgba(0,0,0,.2)',
+    boxShadowNone : 'box-shadow: 1px 1px 1px rgba(0,0,0,0)',
 }

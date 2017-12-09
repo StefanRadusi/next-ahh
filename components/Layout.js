@@ -106,7 +106,8 @@ div.layout {
     font-size: 10px;
     font-family: News Cycle, Arial;
     font-weight: 300;
-    background: ${css.neutral}
+    color: ${css.grey}
+    background: ${css.neutral};
 }
 
 div.basicPage {

@@ -4,7 +4,7 @@ export default () => (
     <svg width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" >
     <g>
         
-            <rect x="200.075" y="418.507" transform="matrix(-0.5728 -0.8197 0.8197 -0.5728 -25.5507 831.1627)" fill="none" stroke="#000000" Z="2" strokeMiterlimit="10" width="7.463" height="7.464"/>
+            <rect x="200.075" y="418.507" transform="matrix(-0.5728 -0.8197 0.8197 -0.5728 -25.5507 831.1627)" fill="none" stroke="#000000" z="2" strokeMiterlimit="10" width="7.463" height="7.464"/>
         
             <rect x="309.533" y="418.498" transform="matrix(-0.573 -0.8196 0.8196 -0.573 146.6958 920.8959)" fill="none" stroke="#000000" strokeWidth="2" strokeMiterlimit="10" width="7.464" height="7.465"/>
         <circle fill="none" stroke="#000000" strokeWidth="2" strokeMiterlimit="10" cx="228.446" cy="422.162" r="2.878"/>
@@ -299,6 +299,39 @@ export default () => (
             svg {
 
                 ${css.basicBannerSvg}
+            }
+
+            @media (max-width: 400px) {
+                svg {
+                    height: 200px;
+                }
+            }
+
+            * {
+                stroke : ${css.red};
+                stroke-dasharray: 500;
+                stroke-dashoffset: 0;
+            }
+            
+            @keyframes drew {
+                0% {
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 0;
+                }
+                
+                50% {
+                    stroke-dasharray: 100;
+                    stroke-dashoffset: 200;
+                }    
+                
+                100% {
+                    stroke-dasharray: 400;
+                    stroke-dashoffset: 400;
+                }
+            }
+            
+            svg:hover  * {
+                animation: drew 2s ease;
             }
             `
         }</style>
