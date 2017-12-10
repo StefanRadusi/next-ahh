@@ -156,7 +156,7 @@ svg.blick {
     100% {
         stroke-width: 0;
         r : 40;
-        stroke-dasharray : 13; 
+        strokeDasharray : 13; 
     }
 }
 
@@ -164,7 +164,7 @@ svg.blick circle {
     stroke-width: 0;
     r: 6;
     stroke : ${css.grey};
-    stroke-dasharray : 13;
+    strokeDasharray : 13;
 }
 
 div.menuIcon:hover svg.blick circle {
@@ -207,6 +207,10 @@ li: hover {
 @media (max-width: 600px) {
     li {
         opacity: 1;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0);
+    }
+    
+    div.page.show li {
         box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     }
 }
@@ -219,11 +223,13 @@ div.page {
 
 @keyframes show {
     0% {
+        box-shadow: 1px 1px 1px rgba(0,0,0,0);
         opacity: 0;
         transform: translateY(15px);
     }
     
     100% {
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
         opacity: 1;
         transform: translateY(0px);
     }
@@ -231,11 +237,13 @@ div.page {
 
 @keyframes hide {
     0% {
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
         opacity: 1;
         transform: translateY(0px);
     }
     
     100% {
+        box-shadow: 1px 1px 1px rgba(0,0,0,0);
         opacity: 0;
         transform: translateY(-15px);
     }

@@ -1,38 +1,44 @@
-'use strict';
+webpackHotUpdate(5,{
+
+/***/ 548:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+var _getPrototypeOf = __webpack_require__(37);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+var _classCallCheck2 = __webpack_require__(15);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = require('babel-runtime/helpers/createClass');
+var _createClass2 = __webpack_require__(16);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+var _possibleConstructorReturn2 = __webpack_require__(40);
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = require('babel-runtime/helpers/inherits');
+var _inherits2 = __webpack_require__(39);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _style = require('styled-jsx\\style.js');
+var _style = __webpack_require__(541);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _react = require('react');
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _utils = require('../../css/utils');
+var _utils = __webpack_require__(540);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -103,3 +109,10 @@ var Banner = function (_Component) {
 }(_react.Component);
 
 exports.default = Banner;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (true) { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\programming\\nodejs\\heroku\\next-ahh\\components\\reusable\\Banner.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\programming\\nodejs\\heroku\\next-ahh\\components\\reusable\\Banner.js"); } } })();
+
+/***/ })
+
+})
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNS44MWEwNGE0ZmVkZWFkNjMxMjc2Yi5ob3QtdXBkYXRlLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vY29tcG9uZW50cy9yZXVzYWJsZS9CYW5uZXIuanM/ZThkMyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgY3NzIGZyb20gJy4uLy4uL2Nzcy91dGlscyc7XHJcblxyXG5jbGFzcyBCYW5uZXIgZXh0ZW5kcyBDb21wb25lbnQge1xyXG4gICAgc3RhdGUgPSB7XHJcbiAgICAgICAgaG92ZXIgOiBmYWxzZVxyXG4gICAgfVxyXG5cclxuICAgIHRvZ2dsZUhvdmVyKCkge1xyXG4gICAgICAgIGNvbnNvbGUubG9nKCdpbicpO1xyXG4gICAgICAgIHRoaXMuc3RhdGUuaG92ZXIgPSAhdGhpcy5zdGF0ZS5ob3ZlcjtcclxuICAgICAgICB0aGlzLnNldFN0YXRlKHRoaXMuc3RhdGUpO1xyXG4gICAgfVxyXG5cclxuICAgIHJlbmRlcigpIHtcclxuICAgICAgICByZXR1cm4gKFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nYW5pbWF0ZWRUaXRsZVNlY3Rpb24nIG9uTW91c2VFbnRlcj17dGhpcy50b2dnbGVIb3Zlci5iaW5kKHRoaXMpfSBvbk1vdXNlTGVhdmU9e3RoaXMudG9nZ2xlSG92ZXIuYmluZCh0aGlzKX0+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17dGhpcy5wcm9wcy5yZXZlcnNlID8gJ3RpdGxlIHJldmVyc2UnIDogJ3RpdGxlJ30+XHJcbiAgICAgICAgICAgICAgICAgICAgPHA+e3RoaXMucHJvcHMudGV4dH08L3A+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDx0aGlzLnByb3BzLnN2Z1xyXG4gICAgICAgICAgICAgICAgICAgIGhvdmVyID0ge3RoaXMuc3RhdGUuaG92ZXJ9XHJcbiAgICAgICAgICAgICAgICAvPlxyXG5cclxuICAgICAgICAgICAgICAgPHN0eWxlIGpzeD57XHJcbmBcclxuZGl2LmFuaW1hdGVkVGl0bGVTZWN0aW9uIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBib3JkZXI6IDRweCBzb2xpZCAke2Nzcy5za3l9O1xyXG4gICAgYm9yZGVyLXJhZGl1czogOHB4O1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcclxuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbiAgICAke2Nzcy5ib3hTaGFkb3dOb25lfTtcclxufVxyXG5cclxuZGl2LmFuaW1hdGVkVGl0bGVTZWN0aW9uOmhvdmVyIHtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4wMDUpO1xyXG4gICAgJHtjc3MuYm94U2hhZG93fTtcclxufVxyXG5cclxuZGl2LmFuaW1hdGVkVGl0bGVTZWN0aW9uID4gZGl2IHtcclxuICAgIGRpc3BsYXk6ZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBmbGV4OiAxO1xyXG4gICAgbWluLXdpZHRoOjQwJTtcclxufVxyXG5cclxuZGl2LmFuaW1hdGVkVGl0bGVTZWN0aW9uID4gZGl2LnRpdGxlLnJldmVyc2Uge1xyXG4gICAgLy8gb3JkZXI6IDI7XHJcbn1cclxuXHJcbnAge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDUwcHg7XHJcbiAgICBtYXJnaW46IDEwcHg7XHJcbiAgICBmb250LWZhbWlseTogJ0FtYXRpYyBTQycsIGN1cnNpdmU7XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgcCB7XHJcbiAgICAgICAgZm9udC1zaXplOiAzMHB4O1xyXG4gICAgfVxyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNTAwcHgpIHtcclxuICAgIHAge1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIH1cclxufVxyXG5cclxuXHJcbnN2ZyB7XHJcbiAgICBmbGV4OiAxO1xyXG59XHJcblxyXG5gXHJcbiAgICAgICAgICAgICAgIH08L3N0eWxlPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICApXHJcbiAgICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEJhbm5lcjtcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gLi9jb21wb25lbnRzL3JldXNhYmxlL0Jhbm5lci5qcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTs7O0FBQUE7QUFDQTs7Ozs7Ozs7QUFDQTs7Ozs7Ozs7Ozs7Ozs7QUFDQTtBQUNBO0FBQUE7Ozs7O0FBSUE7QUFBQTtBQUNBO0FBQ0E7Ozs7QUFJQTtBQUNBOztBQUFBO0FBQ0E7QUFEQTtBQUFBOztBQUNBO0FBQ0E7QUFEQTtBQUNBO0FBQUE7O0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFHQTs7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQUxBO0FBaEJBO0FBZ0JBOzs7OztBQW9FQTtBQUNBO0FBREE7QUFDQTs7Ozs7QSIsInNvdXJjZVJvb3QiOiIifQ==

@@ -1,7 +1,7 @@
 import css from '../../css/utils';
 
-export default () => (
-    <svg width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" >
+export default (props) => (
+    <svg width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" className={props.hover && 'hover'}>
     <g>
         
             <rect x="200.075" y="418.507" transform="matrix(-0.5728 -0.8197 0.8197 -0.5728 -25.5507 831.1627)" fill="none" stroke="#000000" z="2" strokeMiterlimit="10" width="7.463" height="7.464"/>
@@ -297,7 +297,6 @@ export default () => (
         <style jsx>{
             `
             svg {
-
                 ${css.basicBannerSvg}
             }
 
@@ -309,6 +308,7 @@ export default () => (
 
             * {
                 stroke : ${css.red};
+                stroke-width: 2;
                 stroke-dasharray: 500;
                 stroke-dashoffset: 0;
             }
@@ -325,12 +325,12 @@ export default () => (
                 }    
                 
                 100% {
-                    stroke-dasharray: 400;
-                    stroke-dashoffset: 400;
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 1000;
                 }
             }
             
-            svg:hover  * {
+            svg.hover  * {
                 animation: drew 2s ease;
             }
             `

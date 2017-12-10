@@ -10,6 +10,15 @@ const Home = () => (
       text="Poze si filmari evenimente"
       svg={svgAgregator.events}
     />
+    <Banner
+      text="Print poze si cavans"
+      svg={svgAgregator.print}
+      reverse
+    />
+    <Banner
+      text="Personalizari tricouri, cani si altele"
+      svg={svgAgregator.personalizari}
+    />
   </div>
 ) 
 

@@ -26,7 +26,7 @@ var _svgAgregator2 = _interopRequireDefault(_svgAgregator);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'F:\\nodejs\\next-ahh\\pages\\index.js?entry';
+var _jsxFileName = 'D:\\programming\\nodejs\\heroku\\next-ahh\\pages\\index.js?entry';
 
 
 var Home = function Home() {
@@ -41,18 +41,33 @@ var Home = function Home() {
       fileName: _jsxFileName,
       lineNumber: 9
     }
+  }), _react2.default.createElement(_Banner2.default, {
+    text: 'Print poze si cavans',
+    svg: _svgAgregator2.default.print,
+    reverse: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }), _react2.default.createElement(_Banner2.default, {
+    text: 'Personalizari tricouri, cani si altele',
+    svg: _svgAgregator2.default.personalizari,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
   }));
 };
 
 exports.default = function () {
   return _react2.default.createElement(_Layout2.default, { homePage: true, __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 26
     }
   }, _react2.default.createElement(Home, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 27
     }
   }));
 };
