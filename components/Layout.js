@@ -111,6 +111,8 @@ div.layout {
     font-weight: 300;
     color: ${css.grey}
     background: ${css.neutral};
+    display: flex;
+    flex-direction: column;
 }
 
 div.basicPage {

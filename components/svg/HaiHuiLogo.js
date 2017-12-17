@@ -161,20 +161,24 @@ svg {
 @keyframes fillAtelierul {
     0% {
         fill: transparent;
+        opacity: 1;
     }
     
     100% {
         fill: #054D4D;
+        opacity: 1;
     }
 }
 
 @keyframes fillHaihui {
     0% {
+        opacity: 1;
         fill: transparent;
     }
     
     100% {
         fill: #FF3B3F;
+        opacity: 1;
     }
 }
 

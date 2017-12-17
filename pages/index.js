@@ -5,7 +5,7 @@ import svgAgregator from '../components/svg/svgAgregator';
 
 
 const Home = () => (
-  <div className='basicPage'>
+  <div className='home basicPage'>
     <Banner
       text="Poze si filmari evenimente"
       svg={svgAgregator.events}
@@ -13,7 +13,6 @@ const Home = () => (
     <Banner
       text="Print poze si cavans"
       svg={svgAgregator.print}
-      reverse
     />
     <Banner
       text="Personalizari tricouri, cani si altele"

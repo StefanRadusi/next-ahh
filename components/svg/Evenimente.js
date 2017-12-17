@@ -1,4 +1,4 @@
-import css from '../../css/utils';
+import {svgBasic} from '../../css/utils';
 
 export default (props) => (
     <svg width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" className={props.hover && 'hover'}>
@@ -294,46 +294,30 @@ export default (props) => (
     </g>
 
 
-        <style jsx>{
-            `
-            svg {
-                ${css.basicBannerSvg}
-            }
-
-            @media (max-width: 400px) {
-                svg {
-                    height: 200px;
-                }
-            }
-
-            * {
-                stroke : ${css.red};
-                stroke-width: 2;
-                stroke-dasharray: 500;
-                stroke-dashoffset: 0;
-            }
-            
+        <style jsx>{`
             @keyframes drew {
+                
                 0% {
-                    stroke-dasharray: 500;
+                    stroke-dasharray: 600;
                     stroke-dashoffset: 0;
                 }
                 
                 50% {
                     stroke-dasharray: 100;
                     stroke-dashoffset: 200;
-                }    
-                
-                100% {
-                    stroke-dasharray: 500;
-                    stroke-dashoffset: 1000;
-                }
-            }
+            }    
             
-            svg.hover  * {
-                animation: drew 2s ease;
+            100% {
+                stroke-dasharray: 600;
+                stroke-dashoffset: 1210;
             }
-            `
-        }</style>
+        }
+
+        svg.hover  * {
+            animation: drew 2s ease;
+        }
+    
+        `}</style>
+        <style jsx>{svgBasic}</style>
     </svg>
 )

@@ -197,7 +197,7 @@ li {
     transition: all .2s ease;
 }
 
-li: hover {
+li:hover {
     opacity: 1;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     transform: scale(1.01);

@@ -1,4 +1,4 @@
-import css from '../../css/utils';
+import {svgBasic} from '../../css/utils';
 
 export default (props) => (
     <svg width="500px" height="500px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" className={props.hover && 'hover'}>
@@ -117,26 +117,8 @@ export default (props) => (
 	<polygon fill="none" stroke="#000000" strokeWidth="2" strokeMiterlimit="10" points="174.958,346.043 174.958,461.469 
 		180.407,453.861 	"/>
 </g>
-
-        <style jsx>{
-            `
-            svg {
-                ${css.basicBannerSvg}
-            }
-
-            @media (max-width: 400px) {
-                svg {
-                    height: 200px;
-                }
-            }
-
-            * {
-                stroke : ${css.red};
-                strokeWidth: 2;
-                stroke-dasharray: 800;
-                stroke-dashoffset: 0;
-            }
-            
+		<style jsx>{svgBasic}</style>
+        <style jsx>{`
             @keyframes drew {
                 0% {
                     stroke-dasharray: 600;

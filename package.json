@@ -8,8 +8,8 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "next": "^2.4.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "next": "^4.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
