@@ -6,16 +6,24 @@ class Banner extends Component {
         hover : false
     }
 
-    toggleHover() {
-        console.log('in');
-        this.state.hover = !this.state.hover;
+    animateSvg() {
+        this.state.hover = true;
         this.setState(this.state);
+    }
+
+    removeAnimationSvg() {
+        this.state.hover = false;
+        this.setState(this.state);
+    }
+
+    componentDidMount() {
+        console.log('mount');
     }
 
     render() {
         return (
-            <div className='animatedTitleSection' onMouseEnter={this.toggleHover.bind(this)} onMouseLeave={this.toggleHover.bind(this)}>
-                <div className={this.props.reverse ? 'title reverse' : 'title'}>
+            <div className='animatedTitleSection' onMouseEnter={this.animateSvg.bind(this)} onMouseLeave={this.removeAnimationSvg.bind(this)}>
+                <div className='title'>
                     <p>{this.props.text}</p>
                 </div>
                 <this.props.svg
@@ -46,16 +54,14 @@ div.animatedTitleSection > div {
     min-width:40%;
 }
 
-div.animatedTitleSection > div.title.reverse {
-    // order: 2;
-}
-
 p {
     width: 100%;
     text-align: center;
     font-size: 50px;
     margin: 10px;
     font-family: 'Amatic SC', cursive;
+    text-decoration: none;
+    color: ${css.grey}
 }
 
 @media (max-width: 600px) {

@@ -114,8 +114,7 @@ export default () => (
                 C350.393,170.008,350.632,178.412,354.77,186.957z"/>
         </g>
 
-        <style jsx>{
-`
+        <style jsx>{`
 svg {
     ${css.center};
     width: 100%;
@@ -127,21 +126,17 @@ svg {
     0% {
         transform: scale(0);
     }
-    
     50% {
         transform: scale(1.1)
     }
-    
     70% {
-        transform: scale(.9);
         opacity: 1;
+        transform: scale(.9);
     }
-    
     90% {
         transform: scale(1.05)
         opacity: 1;
     }
-    
     100% {
         transform: scale(1)
         opacity: 1;
@@ -152,7 +147,6 @@ svg {
     0% {
         stroke-dashoffset: 2700;
     }
-    
     100% {
         stroke-dashoffset: 0;
     }
@@ -163,7 +157,6 @@ svg {
         fill: transparent;
         opacity: 1;
     }
-    
     100% {
         fill: #054D4D;
         opacity: 1;
@@ -175,14 +168,11 @@ svg {
         opacity: 1;
         fill: transparent;
     }
-    
     100% {
         fill: #FF3B3F;
         opacity: 1;
     }
 }
-
-
 
 path {
     stroke-width: 3;
@@ -194,13 +184,11 @@ path {
 
 #atelierul {
     animation: animateHaiHui 2s 1s ease forwards , drew 2s 1s forwards, fillAtelierul 3s 2s forwards;
-    
 }
 
 #haihui {
     animation: animateHaiHui 2s 1.5s ease forwards , drew 2s 1.5s forwards, fillHaihui 3s 2.5s forwards;
 }
-`            
-        }</style>
+        `}</style>
     </svg>    
 );

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import {Component} from 'react';
 import css from '../css/utils';
-// import { setTimeout } from 'timers';
 
 class Header extends Component {
     constructor() {
@@ -58,15 +57,17 @@ class Header extends Component {
                     <div className={this.state.showPages ? 'pages show' :  'pages'} onMouseLeave={this.hidePages.bind(this)}>
                         <ul>
                             {
-                                ['Photo-video', 'Print', 'Personalizari', 'Contact'].map((col, i) => (
+                                ['Home', 'PhotoVideo', 'Print', 'Personalizari', 'Contact'].map((col, i) => (
                                     <li key={i}>
                                         <div className={this.state.runAnimation ? 'page show' :  'page hide'} style={{animationDelay: `.${i}s`}}>
+                                        <Link href={'/' + (col == 'Home' ? '' : col)}>
                                             <a>
                                                 <div>
                                                     <img src={`./static/headerIcons/${col}.png`}/>
                                                 </div>
                                                 <p> {col} </p>
                                             </a>
+                                        </Link>
                                         </div>
                                     </li>
                                 ))
@@ -262,6 +263,8 @@ div.page.hide {
 a {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: ${css.grey}
 }
 
 a img {

@@ -2,13 +2,18 @@ import {Component} from 'react';
 import Layout from '../components/Layout';
 // import css from '../css/utils';
 import Banner from '../components/reusable/Banner';
-import svgAgregator from '../components/svg/svgAgregator';
-
+import svgAggregator from '../components/svg/svgAgregator';
+import customFetch from '../components/reusable/CustomFetch';
 
 class PhotoVideo extends Component { 
   constructor() {
     super();
 
+  }
+
+  componentDidMount() {
+    customFetch.fetch('GET', '')
+    .then(response => console.log(response));
   }
 
   render() {
@@ -18,7 +23,7 @@ class PhotoVideo extends Component {
         <div className='nunti'>
           <Banner 
             text="Nunti si evenimente conexe"
-            svg={svgAgregator.nunti}
+            svg={svgAggregator.nunti}
           />
         </div>
     

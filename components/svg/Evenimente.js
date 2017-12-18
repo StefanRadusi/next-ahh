@@ -295,28 +295,24 @@ export default (props) => (
 
 
         <style jsx>{`
-            @keyframes drew {
-                
-                0% {
-                    stroke-dasharray: 600;
-                    stroke-dashoffset: 0;
-                }
-                
-                50% {
-                    stroke-dasharray: 100;
-                    stroke-dashoffset: 200;
-            }    
-            
-            100% {
-                stroke-dasharray: 600;
-                stroke-dashoffset: 1210;
-            }
-        }
+@keyframes drew { 
+    0% {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+    }    
+    50% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 200;
+    }
+    100% {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 1210;
+    }
+}
 
-        svg.hover  * {
-            animation: drew 2s ease;
-        }
-    
+svg.hover  * {
+    animation: drew 2s ease;
+}
         `}</style>
         <style jsx>{svgBasic}</style>
     </svg>
