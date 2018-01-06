@@ -3,18 +3,19 @@ import Layout from '../components/Layout';
 // import css from '../css/utils';
 import Banner from '../components/reusable/Banner';
 import svgAggregator from '../components/svg/svgAgregator';
-import customFetch from '../components/reusable/CustomFetch';
+import PhotoCarousel from '../components/reusable/PhtoCarousel';
+
 
 class PhotoVideo extends Component { 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      photos : []
+    };
   }
 
-  componentDidMount() {
-    customFetch.fetch('GET', '')
-    .then(response => console.log(response));
-  }
+  
 
   render() {
 
@@ -25,10 +26,15 @@ class PhotoVideo extends Component {
             text="Nunti si evenimente conexe"
             svg={svgAggregator.nunti}
           />
+          <PhotoCarousel 
+            folder='evenimente/nunti'
+            imgPreview={this.props.showPreviewerFunc} 
+          />
+          
         </div>
     
         <style jsx>{`
-    
+          
         
         `}</style>
       </div>

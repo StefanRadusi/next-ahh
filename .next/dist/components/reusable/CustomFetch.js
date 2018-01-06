@@ -4,23 +4,23 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _promise = require('next\\node_modules\\babel-runtime/core-js/promise');
+var _promise = require('babel-runtime/core-js/promise');
 
 var _promise2 = _interopRequireDefault(_promise);
 
-var _stringify = require('next\\node_modules\\babel-runtime/core-js/json/stringify');
+var _stringify = require('babel-runtime/core-js/json/stringify');
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
-var _keys = require('next\\node_modules\\babel-runtime/core-js/object/keys');
+var _keys = require('babel-runtime/core-js/object/keys');
 
 var _keys2 = _interopRequireDefault(_keys);
 
-var _classCallCheck2 = require('next\\node_modules\\babel-runtime/helpers/classCallCheck');
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = require('next\\node_modules\\babel-runtime/helpers/createClass');
+var _createClass2 = require('babel-runtime/helpers/createClass');
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
@@ -30,7 +30,8 @@ var CustomFetch = function () {
     function CustomFetch() {
         (0, _classCallCheck3.default)(this, CustomFetch);
 
-        this.domain = 'https://ahh-services.herokuapp.com/';
+        // this.domain = 'https://ahh-services.herokuapp.com/';
+        this.domain = 'http://localhost:8080/';
     }
 
     (0, _createClass3.default)(CustomFetch, [{
@@ -95,4 +96,4 @@ var CustomFetch = function () {
 }();
 
 exports.default = new CustomFetch();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXHJldXNhYmxlXFxDdXN0b21GZXRjaC5qcyJdLCJuYW1lcyI6WyJDdXN0b21GZXRjaCIsImRvbWFpbiIsIm1ldGhvZCIsInVybCIsInBhcmFtcyIsImZpbmFsVVJsIiwibWFwIiwia2V5Iiwiam9pbiIsIlJlcXVlc3QiLCJib2R5IiwicmVzb2x2ZSIsInJlamVjdCIsImZldGNoIiwibWFrZVJlcXVlc3QiLCJ0aGVuIiwicmVzcG9uc2UiLCJqc29uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBQU0sQSwwQkFDRjsyQkFBYzs0Q0FDVjs7YUFBQSxBQUFLLFNBQUwsQUFBYyxBQUNqQjs7Ozs7b0NBRVcsQSxRQUFRLEEsS0FBSyxBLFFBQVEsQUFDN0I7Z0JBQUcsVUFBSCxBQUFhLE9BQU8sQUFDaEI7b0JBQUksV0FBVyxLQUFBLEFBQUssU0FBcEIsQUFBNkIsQUFDN0I7b0JBQUEsQUFBSSxRQUFRLEFBQ1I7MERBQWdCLEFBQVksUUFBWixBQUFvQixJQUFJLGVBQUE7K0JBQU8sTUFBQSxBQUFNLE1BQU0sT0FBbkIsQUFBbUIsQUFBTztBQUFsRCxxQkFBQSxFQUFBLEFBQXdELEtBQXhFLEFBQWdCLEFBQTZELEFBQ2hGO0FBQ0Q7dUJBQU8sSUFBQSxBQUFJLFFBQVgsQUFBTyxBQUFZLEFBQ3RCO0FBTkQsbUJBTU8sSUFBSSxVQUFKLEFBQWMsUUFBUSxBQUN6QjsyQkFBTyxBQUFJLFFBQ1AsS0FBQSxBQUFLLFNBREYsQUFDVzs0QkFDZCxBQUNhLEFBQ1Q7MEJBQU8seUJBSmYsQUFBTyxBQUVILEFBRVcsQUFBZSxBQUdqQztBQUxPLEFBQ0ksaUJBSEQ7QUFRZDs7Ozs7Ozs7Ozs7Ozs7b0IsQUFFSyxRLEFBQVEsSyxBQUFLLFFBQVE7d0JBQ3ZCOzt5Q0FBbUIsVUFBQSxBQUFDLFNBQUQsQUFBVSxRQUFXLEFBQ3BDO3NCQUFNLE1BQUEsQUFBSyxZQUFMLEFBQWlCLFFBQWpCLEFBQXlCLEtBQS9CLEFBQU0sQUFBOEIsU0FBcEMsQUFDQyxLQUFLLG9CQUFBOzJCQUFZLFNBQVosQUFBWSxBQUFTO0FBRDNCLG1CQUFBLEFBRUMsS0FBSyxnQkFBQTsyQkFBUSxRQUFSLEFBQVEsQUFBUTtBQUZ0QixBQUdIO0FBSkQsQUFBTyxBQUtWLGFBTFU7QUFPWCxBOztBQUNBO0FBQ0E7QUFDQTtBQUVBOztBQUVBOztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Ozs7OztBQUdKOztrQkFBZSxJQUFmLEFBQWUsQUFBSSIsImZpbGUiOiJDdXN0b21GZXRjaC5qcyIsInNvdXJjZVJvb3QiOiJGOi9ub2RlanMvbmV4dC1haGgifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXHJldXNhYmxlXFxDdXN0b21GZXRjaC5qcyJdLCJuYW1lcyI6WyJDdXN0b21GZXRjaCIsImRvbWFpbiIsIm1ldGhvZCIsInVybCIsInBhcmFtcyIsImZpbmFsVVJsIiwibWFwIiwia2V5Iiwiam9pbiIsIlJlcXVlc3QiLCJib2R5IiwicmVzb2x2ZSIsInJlamVjdCIsImZldGNoIiwibWFrZVJlcXVlc3QiLCJ0aGVuIiwicmVzcG9uc2UiLCJqc29uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBQU0sQSwwQkFDRjsyQkFBYzs0Q0FDVjs7QUFDQTthQUFBLEFBQUssU0FBTCxBQUFjLEFBQ2pCOzs7OztvQ0FFVyxBLFFBQVEsQSxLLEFBQUssUUFBUSxBQUM3QjtnQkFBRyxVQUFILEFBQWEsT0FBTyxBQUNoQjtvQkFBSSxXQUFXLEtBQUEsQUFBSyxTQUFwQixBQUE2QixBQUM3QjtvQkFBQSxBQUFJLFFBQVEsQUFDUjswREFBZ0IsQUFBWSxRQUFaLEFBQW9CLElBQUksZUFBQTsrQkFBTyxNQUFBLEFBQU0sTUFBTSxPQUFuQixBQUFtQixBQUFPO0FBQWxELHFCQUFBLEVBQUEsQUFBd0QsS0FBeEUsQUFBZ0IsQUFBNkQsQUFDaEY7QUFDRDt1QkFBTyxJQUFBLEFBQUksUUFBWCxBQUFPLEFBQVksQUFDdEI7QUFORCxtQkFNTyxJQUFJLFVBQUosQUFBYyxRQUFRLEFBQ3pCOzJCQUFPLEFBQUksUUFDUCxLQUFBLEFBQUssU0FERixBQUNXOzRCQUNkLEFBQ2EsQUFDVDswQkFBTyx5QkFKZixBQUFPLEFBRUgsQUFFVyxBQUFlLEFBR2pDO0FBTE8sQUFDSSxpQkFIRDtBQVFkOzs7Ozs7Ozs7Ozs7OztvQixBQUVLLFEsQUFBUSxLLEFBQUssUUFBUTt3QkFDdkI7O3lDQUFtQixVQUFBLEFBQUMsU0FBRCxBQUFVLFFBQVcsQUFDcEM7c0JBQU0sTUFBQSxBQUFLLFlBQUwsQUFBaUIsUUFBakIsQUFBeUIsS0FBL0IsQUFBTSxBQUE4QixTQUFwQyxBQUNDLEtBQUssb0JBQUE7MkJBQVksU0FBWixBQUFZLEFBQVM7QUFEM0IsbUJBQUEsQUFFQyxLQUFLLGdCQUFBOzJCQUFRLFFBQVIsQUFBUSxBQUFRO0FBRnRCLEFBR0g7QUFKRCxBQUFPLEFBS1YsYUFMVTtBQU9YLEE7O0FBQ0E7QUFDQTtBQUNBO0FBRUE7O0FBRUE7O0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Ozs7O0FBR0o7O2tCQUFlLElBQWYsQUFBZSxBQUFJIiwiZmlsZSI6IkN1c3RvbUZldGNoLmpzIiwic291cmNlUm9vdCI6IkQ6L3Byb2dyYW1taW5nL25vZGVqcy9oZXJva3UvbmV4dC1haGgifQ==

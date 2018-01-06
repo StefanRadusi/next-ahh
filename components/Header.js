@@ -44,7 +44,7 @@ class Header extends Component {
             <div className={this.props.homePage ? 'header hasBanner' : 'header'}>
                 <div className='line'></div>
                 <div className='container'>
-                    <div className='menuIcon' onMouseEnter={this.showPages.bind(this)} onClick={this.state.showPages ? this.hidePages.bind(this) : this.showPages.bind(this)}>
+                    <div className='menuIcon' onClick={this.state.showPages ? this.hidePages.bind(this) : this.showPages.bind(this)}>
                         <img src='./static/haihuiLogo.png' />
                         <p> Menu </p>
                         <svg height="40" width="46" viewBox="0 0 100 100" className="blick">
@@ -54,7 +54,7 @@ class Header extends Component {
                             <path/>
                         </svg>
                     </div>
-                    <div className={this.state.showPages ? 'pages show' :  'pages'} onMouseLeave={this.hidePages.bind(this)}>
+                    <div className={this.state.showPages ? 'pages show' :  'pages'} >
                         <ul>
                             {
                                 ['Home', 'PhotoVideo', 'Print', 'Personalizari', 'Contact'].map((col, i) => (

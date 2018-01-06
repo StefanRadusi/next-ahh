@@ -1,5 +1,7 @@
+import React, {Component} from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import ImgPreviewer from './reusable/ImgPreviewer';
 import Head from 'next/head';
 import css from '../css/utils';
 
@@ -64,67 +66,113 @@ div.svgBackGroundRadient {
     </div>
 );
 
-const Layout = (props) => (
-  <div className='layout'>
-    {
-        props.homePage && <HomeBanner />
+class Layout extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentImgList : [],
+            currentImgPreviewIndex : 0,
+            showPreviewer : false
+        };
     }
-    <Head>
-        <title>Hai Hui</title>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet"/>
-    </Head>
-    <Header homePage = {props.homePage}/>
-    {props.children}
-    <Footer />
 
-    <style jsx global>
-{`
+    showPreviewer(currentImgPreviewIndex, currentImgList) {
+        // console.log(currentImgPreviewIndex);
+        // console.log(currentImgList);
+        // console.log(this);
+        this.state.currentImgPreviewIndex = currentImgPreviewIndex;
+        this.state.currentImgList = currentImgList;
+        this.state.showPreviewer = true;
+        this.setState(this.state);
+    }
+    
+    hidePreviewer() {
+        this.state.showPreviewer = false;
+        this.setState(this.state);
+    }
 
-::-webkit-scrollbar {
-    width: 10px;
-    background: ${css.neutral}; 
+    render() {
+        return (
+            <div className='layout'>
+                {
+                    this.props.homePage && <HomeBanner />
+                }
+                <Head>
+                    <title>Hai Hui</title>
+                    <meta charSet='utf-8' />
+                    <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+                    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet"/>
+                </Head>
+                <Header homePage = {this.props.homePage}/>
+                {
+                    // this.props.children
+                    React.Children.map(this.props.children, child => {
+                        return React.cloneElement(child, {
+                            showPreviewerFunc: this.showPreviewer.bind(this)
+                        })
+                    })
+                }
+                <Footer />
+                <ImgPreviewer 
+                    currentImgPreviewIndex={this.state.currentImgPreviewIndex}
+                    currentImgList={this.state.currentImgList}
+                    hidePreviewer={this.hidePreviewer.bind(this)}
+                    showPreviewer={this.state.showPreviewer}
+                />
+                <style jsx global>
+            {`
+
+            ::-webkit-scrollbar {
+                width: 10px;
+                background: ${css.neutral}; 
+            }
+
+            ::-webkit-scrollbar-track {
+                border-radius: 8px;
+                background: ${css.sky}; 
+            }
+
+            ::-webkit-scrollbar-thumb {
+                border-radius: 6px;
+                border: 2px solid ${css.sky}; 
+                background: ${css.grey}; 
+            }
+
+
+            div.layout {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 100%;
+                font-size: 10px;
+                font-family: News Cycle, Arial;
+                font-weight: 300;
+                color: ${css.grey}
+                background: ${css.neutral};
+                display: flex;
+                flex-direction: column;
+            }
+
+            div.basicPage {
+                margin: auto;
+                margin-top: 50px;
+                padding: 10px;
+                width: calc(100% - 20px);
+                max-width: 980px;
+            }
+
+            div.basicPage >div {
+                padding: 5px;
+                border-radius: 4px;
+                ${css.boxShadowAround}
+            }
+            `}
+                </style>
+            </div>
+        )
+    }
 }
-
-::-webkit-scrollbar-track {
-    border-radius: 8px;
-    background: ${css.sky}; 
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    border: 2px solid ${css.sky}; 
-    background: ${css.grey}; 
-}
-
-
-div.layout {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    font-size: 10px;
-    font-family: News Cycle, Arial;
-    font-weight: 300;
-    color: ${css.grey}
-    background: ${css.neutral};
-    display: flex;
-    flex-direction: column;
-}
-
-div.basicPage {
-    margin: auto;
-    margin-top: 50px;
-    padding: 10px;
-    width: calc(100% - 20px);
-    max-width: 980px;
-}
-`}
-    </style>
-  </div>
-)
 
 export default Layout;

@@ -3,6 +3,7 @@ import css from 'styled-jsx/css';
 const utils = {
     red : '#FF3b3f',
     neutral : '#EFEFEF',
+    neutral_fade: 'rgba(239,239,239,0.9)',
     sky : '#CAEBF2;',
     grey : '#054D4D',
     center: `
@@ -13,6 +14,7 @@ const utils = {
     `,
     boxShadow : 'box-shadow: 1px 1px 1px rgba(0,0,0,.2)',
     boxShadowNone : 'box-shadow: 1px 1px 1px rgba(0,0,0,0)',
+    boxShadowAround : 'box-shadow: 0px 0px 3px rgba(0,0,0,0.2)'
 };
 
 export const svgBasic = css`

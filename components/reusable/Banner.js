@@ -17,7 +17,7 @@ class Banner extends Component {
     }
 
     componentDidMount() {
-        console.log('mount');
+        // console.log('mount');
     }
 
     render() {

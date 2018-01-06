@@ -1,6 +1,7 @@
 class CustomFetch {
     constructor() {
         this.domain = 'https://ahh-services.herokuapp.com/';
+        // this.domain = 'http://localhost:8080/';
     }
 
     makeRequest(method, url, params) {
