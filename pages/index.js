@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Home = () => (
   <div className='home basicPage'>
-    <Link href='/PhotoVideo'>
+    <Link href='/photovideo'>
       <a>
         <Banner
           text="Poze si filmari evenimente"

@@ -60,7 +60,7 @@ class Header extends Component {
                                 ['Home', 'PhotoVideo', 'Print', 'Personalizari', 'Contact'].map((col, i) => (
                                     <li key={i}>
                                         <div className={this.state.runAnimation ? 'page show' :  'page hide'} style={{animationDelay: `.${i}s`}}>
-                                        <Link href={'/' + (col == 'Home' ? '' : col)}>
+                                        <Link href={'/' + (col == 'Home' ? '' : col.toLowerCase())}>
                                             <a>
                                                 <div>
                                                     <img src={`./static/headerIcons/${col}.png`}/>
