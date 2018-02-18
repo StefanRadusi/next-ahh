@@ -125,6 +125,7 @@ class Layout extends Component {
 
             ::-webkit-scrollbar {
                 width: 10px;
+                height:8px;
                 background: ${css.neutral}; 
             }
 

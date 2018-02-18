@@ -1,9 +1,9 @@
 import {Component} from 'react';
 import Layout from '../components/Layout';
-// import css from '../css/utils';
-import Banner from '../components/reusable/Banner';
 import svgAggregator from '../components/svg/svgAgregator';
-import PhotoCarousel from '../components/reusable/PhtoCarousel';
+import PhotoVideoContainer from '../components/reusable/PhotoVideoContainer';
+import Nunti from '../components/oferte/Nunti';
+import Comments from '../components/reusable/comments/Comments';
 
 
 class PhotoVideo extends Component { 
@@ -22,21 +22,20 @@ class PhotoVideo extends Component {
     return (
       <div className='photoVideo basicPage'>
         <div className='nunti'>
-          <Banner 
-            text="Nunti si evenimente conexe"
+          <PhotoVideoContainer
+            text='Nunti si evenimente conexe'
             svg={svgAggregator.nunti}
-          />
-          <PhotoCarousel 
-            folder='evenimente/nunti'
-            imgPreview={this.props.showPreviewerFunc} 
-          />
-          
+            imgFolder={'evenimente/nunti'}
+            showPreviewerFunc={this.props.showPreviewerFunc}
+          >
+            <Nunti/>
+            <Comments
+              label='nunti' 
+              title='nunti si evenimente conexe'
+            />
+          </PhotoVideoContainer>
         </div>
     
-        <style jsx>{`
-          
-        
-        `}</style>
       </div>
     
     )

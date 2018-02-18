@@ -112,17 +112,16 @@ class PhotoCarousel extends Component {
                         height: 100%;
                         width: 25px;
                         position: absolute;
-                        top:0;
-                        left:0;
+                        top: 0px;
+                        left: 0px;
                         background: ${css.neutral};
-                        box-shadow: 0px -4px 4px 2px rgba(0,0,0,.3);
+                        box-shadow: 4px 0px 4px -4px rgba(0,0,0,.6);
                     }
                     
                     div.navigate.right {
-                        
-                        
                         left: unset;
-                        right:0;
+                        box-shadow: -4px 0px 4px -4px rgba(0,0,0,.6);
+                        right: 0px;
                     }
                     
                     svg {

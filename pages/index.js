@@ -4,7 +4,6 @@ import Banner from '../components/reusable/Banner';
 import svgAgregator from '../components/svg/svgAgregator';
 import Link from 'next/link';
 
-
 const Home = () => (
   <div className='home basicPage'>
     <Link href='/photovideo'>

@@ -24,10 +24,6 @@ var _inherits2 = require('babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _style = require('styled-jsx\\style.js');
-
-var _style2 = _interopRequireDefault(_style);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -36,22 +32,25 @@ var _Layout = require('../components/Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
-var _Banner = require('../components/reusable/Banner');
-
-var _Banner2 = _interopRequireDefault(_Banner);
-
 var _svgAgregator = require('../components/svg/svgAgregator');
 
 var _svgAgregator2 = _interopRequireDefault(_svgAgregator);
 
-var _PhtoCarousel = require('../components/reusable/PhtoCarousel');
+var _PhotoVideoContainer = require('../components/reusable/PhotoVideoContainer');
 
-var _PhtoCarousel2 = _interopRequireDefault(_PhtoCarousel);
+var _PhotoVideoContainer2 = _interopRequireDefault(_PhotoVideoContainer);
+
+var _Nunti = require('../components/oferte/Nunti');
+
+var _Nunti2 = _interopRequireDefault(_Nunti);
+
+var _Comments = require('../components/reusable/comments/Comments');
+
+var _Comments2 = _interopRequireDefault(_Comments);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'D:\\programming\\nodejs\\heroku\\next-ahh\\pages\\photovideo.js?entry';
-// import css from '../css/utils';
+var _jsxFileName = '/Users/stefan.radusi/projects/haihui/next-ahh/pages/photovideo.js?entry';
 
 
 var PhotoVideo = function (_Component) {
@@ -72,36 +71,36 @@ var PhotoVideo = function (_Component) {
     key: 'render',
     value: function render() {
 
-      return _react2.default.createElement('div', {
-        className: 'jsx-2727083300' + ' ' + 'photoVideo basicPage',
-        __source: {
+      return _react2.default.createElement('div', { className: 'photoVideo basicPage', __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         }
-      }, _react2.default.createElement('div', {
-        className: 'jsx-2727083300' + ' ' + 'nunti',
-        __source: {
+      }, _react2.default.createElement('div', { className: 'nunti', __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         }
-      }, _react2.default.createElement(_Banner2.default, {
+      }, _react2.default.createElement(_PhotoVideoContainer2.default, {
         text: 'Nunti si evenimente conexe',
         svg: _svgAgregator2.default.nunti,
+        imgFolder: 'evenimente/nunti',
+        showPreviewerFunc: this.props.showPreviewerFunc,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         }
-      }), _react2.default.createElement(_PhtoCarousel2.default, {
-        folder: 'evenimente/nunti',
-        imgPreview: this.props.showPreviewerFunc,
+      }, _react2.default.createElement(_Nunti2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 31
         }
-      })), _react2.default.createElement(_style2.default, {
-        styleId: '2727083300',
-        css: '\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxwaG90b3ZpZGVvLmpzP2VudHJ5Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1Db0IiLCJmaWxlIjoicGFnZXNcXHBob3RvdmlkZW8uanM/ZW50cnkiLCJzb3VyY2VSb290IjoiRDovcHJvZ3JhbW1pbmcvbm9kZWpzL2hlcm9rdS9uZXh0LWFoaCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9MYXlvdXQnO1xyXG4vLyBpbXBvcnQgY3NzIGZyb20gJy4uL2Nzcy91dGlscyc7XHJcbmltcG9ydCBCYW5uZXIgZnJvbSAnLi4vY29tcG9uZW50cy9yZXVzYWJsZS9CYW5uZXInO1xyXG5pbXBvcnQgc3ZnQWdncmVnYXRvciBmcm9tICcuLi9jb21wb25lbnRzL3N2Zy9zdmdBZ3JlZ2F0b3InO1xyXG5pbXBvcnQgUGhvdG9DYXJvdXNlbCBmcm9tICcuLi9jb21wb25lbnRzL3JldXNhYmxlL1BodG9DYXJvdXNlbCc7XHJcblxyXG5cclxuY2xhc3MgUGhvdG9WaWRlbyBleHRlbmRzIENvbXBvbmVudCB7IFxyXG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XHJcbiAgICBzdXBlcihwcm9wcyk7XHJcblxyXG4gICAgdGhpcy5zdGF0ZSA9IHtcclxuICAgICAgcGhvdG9zIDogW11cclxuICAgIH07XHJcbiAgfVxyXG5cclxuICBcclxuXHJcbiAgcmVuZGVyKCkge1xyXG5cclxuICAgIHJldHVybiAoXHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPSdwaG90b1ZpZGVvIGJhc2ljUGFnZSc+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J251bnRpJz5cclxuICAgICAgICAgIDxCYW5uZXIgXHJcbiAgICAgICAgICAgIHRleHQ9XCJOdW50aSBzaSBldmVuaW1lbnRlIGNvbmV4ZVwiXHJcbiAgICAgICAgICAgIHN2Zz17c3ZnQWdncmVnYXRvci5udW50aX1cclxuICAgICAgICAgIC8+XHJcbiAgICAgICAgICA8UGhvdG9DYXJvdXNlbCBcclxuICAgICAgICAgICAgZm9sZGVyPSdldmVuaW1lbnRlL251bnRpJ1xyXG4gICAgICAgICAgICBpbWdQcmV2aWV3PXt0aGlzLnByb3BzLnNob3dQcmV2aWV3ZXJGdW5jfSBcclxuICAgICAgICAgIC8+XHJcbiAgICAgICAgICBcclxuICAgICAgICA8L2Rpdj5cclxuICAgIFxyXG4gICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgIFxyXG4gICAgICAgIFxyXG4gICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgPC9kaXY+XHJcbiAgICBcclxuICAgIClcclxuICB9XHJcblxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCAoKSA9PiAoPExheW91dD48UGhvdG9WaWRlby8+PC9MYXlvdXQ+KTsiXX0= */\n/*@ sourceURL=pages\\photovideo.js?entry */'
-      }));
+      }), _react2.default.createElement(_Comments2.default, {
+        label: 'nunti',
+        title: 'nunti si evenimente conexe',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
+      }))));
     }
   }]);
 
@@ -112,13 +111,13 @@ exports.default = function () {
   return _react2.default.createElement(_Layout2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     }
   }, _react2.default.createElement(PhotoVideo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     }
   }));
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxwaG90b3ZpZGVvLmpzIl0sIm5hbWVzIjpbIkNvbXBvbmVudCIsIkxheW91dCIsIkJhbm5lciIsInN2Z0FnZ3JlZ2F0b3IiLCJQaG90b0Nhcm91c2VsIiwiUGhvdG9WaWRlbyIsInByb3BzIiwic3RhdGUiLCJwaG90b3MiLCJudW50aSIsInNob3dQcmV2aWV3ZXJGdW5jIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFROzs7O0FBQ1IsQUFBTyxBQUFZOzs7O0FBRW5CLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQW1COzs7O0FBQzFCLEFBQU8sQUFBbUI7Ozs7Ozs7QUFIMUI7OztJLEFBTU07c0NBQ0o7O3NCQUFBLEFBQVksT0FBTzt3Q0FBQTs7OElBQUEsQUFDWCxBQUVOOztVQUFBLEFBQUs7Y0FIWSxBQUdqQixBQUFhLEFBQ0Y7QUFERSxBQUNYO1dBRUg7Ozs7OzZCQUlRLEFBRVA7OzZCQUNFLGNBQUE7NENBQUEsQUFBZTs7b0JBQWY7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxrQkFDRSxjQUFBOzRDQUFBLEFBQWU7O29CQUFmO3NCQUFBLEFBQ0U7QUFERjtBQUFBLHlCQUNFLEFBQUM7Y0FBRCxBQUNPLEFBQ0w7YUFBSyx1QkFGUCxBQUVxQjs7b0JBRnJCO3NCQURGLEFBQ0UsQUFJQTtBQUpBO0FBQ0UsMEJBR0YsQUFBQztnQkFBRCxBQUNTLEFBQ1A7b0JBQVksS0FBQSxBQUFLLE1BRm5CLEFBRXlCOztvQkFGekI7c0JBTkosQUFDRSxBQUtFO0FBQUE7QUFDRTtpQkFQTjthQURGLEFBQ0UsQUFvQkg7QUFwQkc7Ozs7O0FBZG1CLEEsQUFzQ3pCOztrQkFBZSxZQUFBO3lCQUFPLEFBQUM7O2dCQUFEO2tCQUFBLEFBQVE7QUFBUjtBQUFBLEdBQUEsZ0NBQVEsQUFBQzs7Z0JBQUQ7a0JBQWYsQUFBTyxBQUFRO0FBQUE7QUFBQTtBQUE5QiIsImZpbGUiOiJwaG90b3ZpZGVvLmpzP2VudHJ5Iiwic291cmNlUm9vdCI6IkQ6L3Byb2dyYW1taW5nL25vZGVqcy9oZXJva3UvbmV4dC1haGgifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Bob3RvdmlkZW8uanMiXSwibmFtZXMiOlsiQ29tcG9uZW50IiwiTGF5b3V0Iiwic3ZnQWdncmVnYXRvciIsIlBob3RvVmlkZW9Db250YWluZXIiLCJOdW50aSIsIkNvbW1lbnRzIiwiUGhvdG9WaWRlbyIsInByb3BzIiwic3RhdGUiLCJwaG90b3MiLCJudW50aSIsInNob3dQcmV2aWV3ZXJGdW5jIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQVE7Ozs7QUFDUixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFtQjs7OztBQUMxQixBQUFPLEFBQXlCOzs7O0FBQ2hDLEFBQU8sQUFBVzs7OztBQUNsQixBQUFPLEFBQWM7Ozs7Ozs7OztJLEFBR2Y7c0NBQ0o7O3NCQUFBLEFBQVksT0FBTzt3Q0FBQTs7OElBQUEsQUFDWCxBQUVOOztVQUFBLEFBQUs7Y0FIWSxBQUdqQixBQUFhLEFBQ0Y7QUFERSxBQUNYO1dBRUg7Ozs7OzZCQUlRLEFBRVA7OzZCQUNFLGNBQUEsU0FBSyxXQUFMLEFBQWU7b0JBQWY7c0JBQUEsQUFDRTtBQURGO09BQUEsa0JBQ0UsY0FBQSxTQUFLLFdBQUwsQUFBZTtvQkFBZjtzQkFBQSxBQUNFO0FBREY7eUJBQ0UsQUFBQztjQUFELEFBQ08sQUFDTDthQUFLLHVCQUZQLEFBRXFCLEFBQ25CO21CQUhGLEFBR2EsQUFDWDsyQkFBbUIsS0FBQSxBQUFLLE1BSjFCLEFBSWdDOztvQkFKaEM7c0JBQUEsQUFNRTtBQU5GO0FBQ0UseUJBS0EsQUFBQzs7b0JBQUQ7c0JBTkYsQUFNRSxBQUNBO0FBREE7QUFBQSwwQkFDQSxBQUFDO2VBQUQsQUFDUSxBQUNOO2VBRkYsQUFFUTs7b0JBRlI7c0JBVlIsQUFDRSxBQUNFLEFBQ0UsQUFPRSxBQVVUO0FBVlM7QUFDRTs7Ozs7QSxBQXhCVyxBQXFDekI7O2tCQUFlLFlBQUE7eUJBQU8sQUFBQzs7Z0JBQUQ7a0JBQUEsQUFBUTtBQUFSO0FBQUEsR0FBQSxnQ0FBUSxBQUFDOztnQkFBRDtrQkFBZixBQUFPLEFBQVE7QUFBQTtBQUFBO0FBQTlCIiwiZmlsZSI6InBob3RvdmlkZW8uanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL3N0ZWZhbi5yYWR1c2kvcHJvamVjdHMvaGFpaHVpL25leHQtYWhoIn0=
