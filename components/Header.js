@@ -150,19 +150,19 @@ svg.blick {
 
 @keyframes blinck {
     50% {
-        stroke-width: 15;
+        strokeWidth: 15;
         
     }
 
     100% {
-        stroke-width: 0;
+        strokeWidth: 0;
         r : 40;
         strokeDasharray : 13; 
     }
 }
 
 svg.blick circle {
-    stroke-width: 0;
+    strokeWidth: 0;
     r: 6;
     stroke : ${css.grey};
     strokeDasharray : 13;
@@ -295,10 +295,10 @@ svg.expande {
 
 svg.expande path {
     stroke: ${css.grey};
-    stroke-width: 9;
+    strokeWidth: 9;
     fill:none;
-    stroke-linejoin : round;
-    stroke-linecap : round;
+    strokeLinejoin : round;
+    strokeLinecap : round;
     transition: all .2s ease;
 
     d : path("M10,10 L70,50 L10,90 L10,10"); 

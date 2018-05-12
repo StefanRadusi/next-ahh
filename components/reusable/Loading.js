@@ -72,7 +72,7 @@ class Loading extends Component {
 
         path {
             stroke: ${css.red};
-            stroke-width: 30px;
+            strokeWidth: 30px;
             stroke-dasharray: 2100;
             stroke-dashoffset: 0;
             transform: rotate(360deg);

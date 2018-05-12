@@ -221,9 +221,9 @@ div.navigate.right svg {
 polygon {
     fill:transparent;
     stroke: ${css.neutral};
-    stroke-width: 40;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    strokeWidth: 40;
+    strokeLinecap: round;
+    strokeLinejoin: round;
     
     transition: all 1s ease;
 }

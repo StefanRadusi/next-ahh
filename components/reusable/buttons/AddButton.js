@@ -21,7 +21,7 @@ const addButtonStyle = cssJsxFunc`
         stroke-dasharray: 200;
         stroke-dashoffset: 0;
         stroke: ${css.green};
-        stroke-width: 2;
+        strokeWidth: 2;
         fill: none;
         transition: all .5s ease;
     }

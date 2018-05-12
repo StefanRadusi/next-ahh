@@ -136,9 +136,9 @@ class PhotoCarousel extends Component {
                     polygon {
                         fill:transparent;
                         stroke: ${css.red};
-                        stroke-width: 40;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
+                        strokeWidth: 40;
+                        strokeLinecap: round;
+                        strokeLinejoin: round;
                         
                         trasnsition: all 1s ease;
                     }

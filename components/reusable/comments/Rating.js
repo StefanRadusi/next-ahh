@@ -14,7 +14,7 @@ const ratingStyle = cssJsxFunc`
 
     polygon {
         fill: none;
-        stroke-width: 20;
+        strokeWidth: 20;
         stroke: grey;
     }
 

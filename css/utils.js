@@ -1,11 +1,13 @@
 import css from 'styled-jsx/css';
 
 const utils = {
+    lightGrey: '#F2F2F2',
+    grey: '#c1c1c1',
     red : '#FF3b3f',
     neutral : '#EFEFEF',
     neutral_fade: 'rgba(239,239,239,0.9)',
     sky : '#CAEBF2;',
-    grey : '#054D4D',
+    darkGreen : '#054D4D',
     green : '#0c9e9e',
     center: `
         position: absolute;
@@ -32,7 +34,7 @@ export const svgBasic = css`
 
     * {
         stroke : ${utils.red};
-        stroke-width: 2;
+        strokeWidth: 2;
         stroke-dasharray: 800;
         stroke-dashoffset: 0;
     }

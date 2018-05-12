@@ -175,7 +175,7 @@ svg {
 }
 
 path {
-    stroke-width: 3;
+    strokeWidth: 3;
     fill:transparent;
     opacity: 0;
     transform-origin: center;
