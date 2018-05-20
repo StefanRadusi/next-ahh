@@ -8,9 +8,13 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "next": "^4.2.1",
+    "next": "latest",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-svg": "^2.2.11"
+  },
+  "devDependencies": {
+    "next-page-transition": "^1.0.8",
+    "next-page-transitions": "^1.0.0-alpha.3"
   }
 }

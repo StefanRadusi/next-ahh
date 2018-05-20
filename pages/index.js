@@ -1,16 +1,11 @@
-import Layout from '../components/Layout/Layout';
-import Head from 'next/head'
-import Banner from '../components/reusable/Banner';
-import svgAgregator from '../components/svg/svgAgregator';
-import Link from 'next/link';
+import { baisicBageStyle } from '../css/Global.style';
+import LandingPage from '../components/LandingPage/LandingPage';
 
 const Home = () => (
   <div className='home basicPage'>
+    <LandingPage />
+    <style jsx>{ baisicBageStyle }</style>
   </div>
 ) 
 
-export default () => (
-  <Layout homePage>  
-    <Home/>
-  </Layout>
-);
+export default Home;

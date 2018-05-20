@@ -4,7 +4,7 @@ import utils from '../../css/utils';
 export default css`
     div.menu {
         padding: 10px;
-        background: ${utils.darkGreen}
+        background: ${utils.darkGreen};
         position: absolute;
         top: 0;
         left: 0;
@@ -23,5 +23,11 @@ export default css`
         align-items: center;
         cursor: pointer;
         margin-bottom: 20px;
+    }
+
+    @media only screen and (max-device-width: 320px) {
+        p {
+            font-size: 16px;
+        }
     }
 `;

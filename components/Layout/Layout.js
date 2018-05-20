@@ -4,12 +4,13 @@ import globalStyle from '../../css/Global.style';
 import Menu from '../Menu/Menu';
 import MenuButton from './MenuButton/MenuButon';
 import Head from 'next/head'
+import { HomeIcon, PhotoIcon } from '../Menu/MenuIcons';
 
 class Layout extends Component {
     constructor(props) {
         super(props);
         this.state = {
-           showMenu : true
+           showMenu : false
         };
     }
 
@@ -18,6 +19,7 @@ class Layout extends Component {
     }
 
     hideMenuAction() {
+        console.log('insss');
         this.setState({showMenu : false });
     }
 
@@ -30,15 +32,20 @@ class Layout extends Component {
                     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
                 </Head>
                 <Menu
-                    pages={{
-                        Home : 'Home',
-                        Photo : 'Photo Studio',
-                        Video : 'Poze/Filmari Evenimente',
-                        Print : 'Print Poze/Canvas',
-                        Custom : 'Personalizari Obiecte',
-                        Contact : 'Contact'
-                    }} 
+                    pages={[
+                        {
+                            icon : <HomeIcon />,
+                            text: 'Home',
+                            link: '/'
+                        },
+                        {
+                            icon : <PhotoIcon />,
+                            text: 'Photo Studio',
+                            link: 'photostudio'
+                        },
+                    ]} 
                     showMenu={this.state.showMenu}
+                    hideMenuAction={this.hideMenuAction.bind(this)}
                 />
                 <div className={`container ${this.state.showMenu && 'showMenu'}`}>
                     <MenuButton 

@@ -24,4 +24,10 @@ export default css`
     div.container.showMenu {
         transform: translateX(295px)
     }
+
+    @media only screen and (max-device-width: 320px) {
+        div.container.showMenu {
+            transform: translateX(260px)
+        }
+    }
 `;

@@ -11,8 +11,10 @@ export default css`
         left: 10px;
         border: 1px solid ${utils.grey};
         border-radius: 50%;
+        z-index: 10;
     }
 
+    
     svg {
         position: absolute;
         top: 50%;
@@ -39,5 +41,19 @@ export default css`
 
     svg.close.show {
         opacity: 1;
+    }
+
+    @media only screen and (max-device-width: 320px) {
+        
+        div.menuButton {
+            width: 40px;
+            height: 40px;
+        }
+
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+        
     }
 `;
