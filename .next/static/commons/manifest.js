@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f3243d7a9171d0de46ff"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ea0172277501f917c0fc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles\\pages\\_app.js","2":"bundles\\pages\\_error.js","4":"bundles\\pages\\index.js","5":"bundles\\pages\\photostudio.js"}[chunkId]||chunkId) + "-" + {"0":"7b6cc94139570d6e609a","1":"219c85f3431af65f8407","2":"e41e584d9e8804421e4c","4":"89413ac43a0b6b0f0e99","5":"c1113a15d240b55e9818"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles\\pages\\_app.js","2":"bundles\\pages\\_error.js","4":"bundles\\pages\\index.js","5":"bundles\\pages\\photostudio.js"}[chunkId]||chunkId) + "-" + {"0":"7b6cc94139570d6e609a","1":"c9c0a822485469cc81b5","2":"e41e584d9e8804421e4c","4":"52e7ae6334bc6daad586","5":"27bc7350cd102a63584e"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {

@@ -21,7 +21,7 @@ export default class MyApp extends App {
         return (
             <Layout> 
                 <Container>
-                    <PageTransition timeout={500} classNames="page-transition">
+                    <PageTransition timeout={600} classNames="page-transition">
                         <Component {...pageProps} />
                     </PageTransition>
                 </Container>

@@ -38,8 +38,8 @@ export default css`
     .page-transition-enter-done {
         width: 100%;
         height: 100%;
-        opacity: 1;
-        transition: opacity .5s ease;
+        //opacity: 1;
+       // transition: opacity .5s ease;
     }
     
     .page-transition-exit {
@@ -51,14 +51,14 @@ export default css`
     .page-transition-exit-active {
         width: 100%;
         height: 100%;
-        opacity: 1;
+        opacity: 0;
         transition: opacity .5s ease;
     }
 
     .page-transition-exit-done {
         width: 100%;
         height: 100%;
-        opacity: 0;
-        transition: opacity .5s ease;
+        //opacity: 0;
+        //transition: opacity .5s ease;
     }
 `;
